@@ -1,0 +1,83 @@
+params:
+  - id: default_key
+    type: string
+    name: "your api key for service"
+    default_value: "sk-xxxxx"
+    description: "the api key for service"
+
+  - id: zai_token
+    type: string
+    name: "z.ai token"
+    optional: true
+    description: "Z.ai Token（optional，not set will use anonymous token）"
+
+  - id: upstream_url
+    type: string
+    name: "upstream api url"
+    optional: true
+    description: "upstream api url（optional，not set will use default url）"
+    default_value: "https://chat.z.ai/api/chat/completions"
+
+  - id: enable_thinking
+    type: bool
+    name: "enable thinking"
+    default_value: true
+    description: "enable thinking（optional，not set will use default thinking）"
+
+  - id: enable_thinking
+    type: bool
+    name: "default stream"
+    default_value: true
+    description: "default stream（optional，not set will use default stream）"
+
+  - id: model_name
+    type: string
+    name: "model name"
+    default_value: "GLM-4.6"
+    description: "model name"
+
+  - id: admin_username
+    type: string
+    name: "the admin username"
+    default_value: "admin"
+    description: "the z.ai default key"
+
+  - id: admin_password
+    type: string
+    name: "the admin password"
+    default_value: "123456"
+    description: "the z.ai default key"
+
+locales:
+  zh:
+    default_key:
+      name: "你的认证密钥"
+      description: "你对外提供访问认证的API 密钥（默认：sk-your-key）"
+
+    zai_token:
+      name: "z.ai Token"
+      description: "Z.ai Token（可选，不设置将使用匿名token）"
+
+    model_name:
+      name: "模型名称"
+      description: "模型名称（默认：GLM-4.6）"
+
+    upstream_url:
+      name: "上游API地址"
+      description: "上游API地址（默认：https://chat.z.ai/api/chat/completions）"
+
+    enable_thinking:
+      name: "启用深度思考"
+      description: "启用深度思考（默认：true）"
+
+    enable_stream:
+      name: "默认流式响应"
+      description: "默认流式响应（默认：true）"
+
+    admin_username:
+      name: "管理员用户名"
+      description: "管理员用户名"
+
+    admin_password:
+      name: "管理员密码"
+      description: "管理员密码"
