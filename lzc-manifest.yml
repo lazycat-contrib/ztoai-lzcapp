@@ -1,23 +1,15 @@
-name: ZtoApi
-package: community.lazycat.app.ztoapi
-version: 0.1.0
-min_os_version: 1.3.8
-description: z.ai助手
-homepage: hulisang/ztoapi
-author: hulisang
-
 application:
   subdomain: ztoapi
   public_path:
     - /
-
   upstreams:
     - location: /
       backend: http://ztoapi:9090
 
 services:
   ztoapi:
-    image: docker.1ms.run/hulisang/ztoapi:latest
+    # upstream: hulisang/ztoapi:latest
+    image: docker.1ms.run/hulisang/ztoapi:latest@sha256:c25d79a31f9fe084118e41ba68a6d619597796efc96349435cda34c36c1f9c1a
     environment:
       - DEFAULT_KEY={{.U.default_key}}
       - ZAI_TOKEN={{.U.zai_token}}

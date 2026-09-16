@@ -1,0 +1,14 @@
+package: community.lazycat.app.ztoapi
+version: 0.1.0
+name: ZtoApi
+description: "z.ai助手"
+min_os_version: "1.5.0"
+homepage: hulisang/ztoapi
+author: hulisang
+locales:
+  zh:
+    name: ZtoApi
+    description: "z.ai 助手"
+  en:
+    name: ZtoApi
+    description: "z.ai assistant"
